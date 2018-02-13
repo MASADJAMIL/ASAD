@@ -1,0 +1,220 @@
+# print("Hello world")
+# print(12+6)
+# print (5,end=" ")
+# print (5)
+#
+# print("END")
+# x=5;
+# y=3.14;
+# z=17.2;
+# print(x+y)
+# print(type(x))
+# print(type(y))     #tells you datatype
+# z=True          #datatype boolean either True/False
+# print(21%5)    #modulus
+# print (type (10/2))    #in divide data type always float
+#
+# #Strings
+# print('Hello world ')
+# print("hello 'world'")   #shows world in inserted commas
+# print("hello \"world\"") #shows world i double inserted commas
+# a="py"
+# b="charm"
+# print(a+b)   #concatenate a & b
+# print(a,b)
+# print(a*5)  #5 times value of a
+# #print (a+5)   #different datatype so error
+# print(a+str(5)) #casting  int 2 string
+#
+# #list
+#
+# x=[1,2,3,4]
+# x=int(input("enter your number"))
+# y = 3.14
+# z = "HELLO"
+# li = [x, y, z, 4]
+# print(li)
+#
+# #list indexes from left to right (0 1 2 ....) and from right to left (-1,-2,-3,............... )
+# print(li[2][-4])
+# print(li[2])
+#
+# #slicing
+# #list(start:end:stepsize)
+# print(li[0:3])  #start index included but ending index not
+# print(li[0:4:2]) #step size if two means skippping 1 index
+# print(li[2][1:4])
+# del(li[2]) #delete at index 2
+# print(li)
+#
+# #copy
+#
+# w = [1, 2, 3, 4]
+# x = w                          # The assignment copies the reference to the original list
+# y = w [:]                     # Slicing creates a new list
+# x [0] = 6
+# y [1] = 9
+# print("w =",w)
+# print("y=",y)
+#
+# #indentation(white space at beggining)
+#
+# x=2
+# if x<10:
+#     print ("this is inside if block")
+#     print ("this is also inside if block")
+# print("this will print always")  #white space khtam to loop break
+#
+# ###################################################   IF ELSE ################################
+# number = 23
+# if number == 24:
+#  print('number is equal to 24')
+# elif number<24:
+#  print ("Number is less than 24")
+# else:
+#  print ("Number is higher than 24")
+#
+# ################################################  WHILE ######################################
+# number = 23
+# while number<50:
+#  print(number)
+#  number+=1
+# else:
+#  print ("wow there is an else for while statement as well")
+
+ ###############################################   FOR LOOP                 ################################
+
+# for i in range(10):
+#  if i==6:
+#   break      # AT BREAK IT COMES OUT OF LOOP AND PRINT VALUE
+# print(i)
+#
+# for i in range(3, 10):
+#  if i==7:
+#   continue  #SKIP AT GIVEN IF CONDITION AND MOVE AT START OF FOR LOOP
+#  print(i)
+# for i in range(1, 10, 3):
+#  print(i)
+
+
+ ############################### FUNCTIONS  #####################################3
+
+# def print_max (a, b=0):
+#  if a > b:
+#   print (a, 'is maximum')
+#  elif a == b:
+#   print (a, 'is equal to', b)
+#  else:
+#   print (b, 'is maximum')
+#
+# print_max (3, 4)
+# x = 5
+# y = 7
+# print_max (x, y)
+#######################################
+
+# def func (a, b=5, c=10):
+#  print ('a is', a, 'and b is', b, 'and c is', c)
+# func (3, 7)
+# func (25, c=24)
+# func (c=50, a=100)
+# # return
+# def max (x, y):
+#  if x > y:
+#   return x
+#  else:
+#   return y
+#
+# m=max (3,5)
+# print(m)
+
+############################################      TASK  1                  ######################
+
+x = [1, 2, 3, 4, 5], [21, 22, 23, 24, 25], [31, 32, 33, 34, 35]
+print (x[2])
+print (x[1][2])
+print (x[1][1:3])
+print (x[0][0:5:2])
+y=[0,0,0]
+sum = 0
+for i in range(0,5,1):
+    sum = sum+x[0][i]
+
+y[0] = sum/5
+sum1 = 0
+for i in range(0,5,1):
+    sum1 = sum1+x[1][i]
+
+y[1] = sum1/5
+sum2 = 0
+for i in range(0,5,1):
+    sum2 = sum2+x[2][i]
+
+y[2]= sum2/5
+
+print(y)
+
+
+
+########################################   TASK 2 #######################################################
+
+
+x = [1, 3, 5, 6, 7, 8, 6, 1, 2, 3]
+y = [0, 0, 0, 0, 0, 0, 0, 0]
+
+sum = 0
+for i in range(0,3,1):
+    sum =sum+ x[i]
+
+y[0]=(sum/3)
+sum = 0
+for i in range(1,4,1):
+    sum =sum+ x[i]
+
+y[1]=(sum/3)
+sum = 0
+for i in range(2,5,1):
+    sum =sum+ x[i]
+
+y[2]=(sum/3)
+
+print(sum/3)
+sum = 0
+for i in range(3,6,1):
+    sum =sum+ x[i]
+
+y[3]=(sum/3)
+
+
+sum = 0
+for i in range(4,7,1):
+    sum =sum+ x[i]
+
+y[4]=(sum/3)
+
+
+sum = 0
+for i in range(5,8,1):
+    sum =sum+ x[i]
+
+y[5]=(sum/3)
+
+sum = 0
+for i in range(6,9,1):
+    sum =sum+ x[i]
+
+y[6]=(sum/3)
+
+sum = 0
+for i in range(7,10,1):
+    sum =sum+ x[i]
+
+y[7]=(sum/3)
+
+print(y)
+
+
+
+
+
+
